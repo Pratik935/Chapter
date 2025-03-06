@@ -3,19 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Chapter 2</title>
+    <style>
+        /* * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: .8fr 3fr;
+        }
+
+        nav {
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            place-content: left;
+            height: 100vh;
+            padding-left: 5px;
+            list-style: none;
+            background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.628), rgba(0, 0, 255, 0.479), rgba(0, 128, 0, 0.485));
+            overflow-y: hidden;
+        }
+
+        nav li {
+            display: flex;
+            align-items: center;
+        }
+
+        nav li a {
+            text-decoration: none;
+            font-size: 1.2em;
+        } */
+
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: .9fr 3fr;
+        min-height: 100vh;
+    }
+
+    nav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        padding-top: 60px;
+        overflow-y: auto;
+    }
+
+        nav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+    }
+
+        nav a:hover {
+        color: #f1f1f1;
+    }
+    </style>
 </head>
 <body>
     <nav>
-        <li><a href="chapter1.html">Chapter 1</a></li>
-        <li><a href="#">Chapter 2</a></li>
-        <li><a href="chapter3.html">Chapter 3</a></li>
-        <li><a href="chapter4.html">Chapter 4</a></li>
-        <li><a href="chapter5.html">Chapter 5</a></li>
-        <li><a href="chapter6.html">Chapter 6</a></li>
-        <li><a href="chapter7.html">Chapter 7</a></li>
-        <li><a href="chapter8.html">Chapter 8</a></li>
+        <li><a href="chapter1.html">Chapter 1: Computer System</a></li>
+        <li><a href="#">Chapter 2: Number System and Boolean Logic</a></li>
+        <li><a href="chapter3.html">Chapter 3: Computer Software and Operating System</a></li>
+        <li><a href="chapter4.html">Chapter 4: Application Package</a></li>
+        <li><a href="chapter5.html">Chapter 5: Programming Concepts and Logics</a></li>
+        <li><a href="chapter6.html">Chapter 6: Web Technology - I</a></li>
+        <li><a href="chapter7.html">Chapter 7: Multimedia</a></li>
+        <li><a href="chapter8.html">Chapter 8: Information Security and Cyber Law</a></li>
     </nav>
     <div>
         <h1>Chapter 2: Number System and Conversion Boolean Logic</h1>
