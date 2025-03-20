@@ -3,62 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEB Grade 11 CS Notes</title>
+    <title>NEB Grade 11 Computer Science Notes</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        .navbar a {
+        header {
+            background: #0073e6;
             color: white;
-            padding: 14px 20px;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background: #005bb5;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
             text-decoration: none;
+            font-weight: bold;
         }
-        .navbar a:hover {
-            background-color: #575757;
-        }
-        .content {
+        main {
             padding: 20px;
-            text-align: left;
-            max-width: 800px;
-            margin: auto;
+            text-align: center;
         }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #0073e6;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        } 
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="chapters/chapter1.html">Chapter 1</a>
-        <a href="chapters/chapter2.html">Chapter 2</a>
-        <a href="chapters/chapter3.html">Chapter 3</a>
-        <a href="chapters/chapter4.html">Chapter 4</a>
-        <a href="chapters/chapter5.html">Chapter 5</a>
-        <a href="chapters/chapter6.html">Chapter 6</a>
-        <a href="chapters/chapter7.html">Chapter 7</a>
-        <a href="chapters/chapter8.html">Chapter 8</a>
-    </div>
-    
-    <div class="content">
-        <h2>Welcome to NEB Grade 11 CS Notes</h2>
-        <p>Select a chapter to view notes.</p>
-        <h3>Chapter Overview</h3>
-        <ul>
-            <li><b>Chapter 1:</b> Computer System</li>
-            <li><b>Chapter 2:</b> Number System and Conversion Boolean Logic</li>
-            <li><b>Chapter 3:</b> Computer Software and Operating System</li>
-            <li><b>Chapter 4:</b> Application Package</li>
-            <li><b>Chapter 5:</b> Programming Concepts and Logics</li>
-            <li><b>Chapter 6:</b> Web Technology - I</li>
-            <li><b>Chapter 7:</b> Multimedia</li>
-            <li><b>Chapter 8:</b> Information Security and Cyber Law</li>
-        </ul>
-    </div>
+    <header>
+        <h1>NEB Grade 11 Computer Science Notes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="chapter/chapter1.html">Chapter 1</a></li>
+                <li><a href="chapter/chapter2.html">Chapter 2</a></li>
+                <li><a href="chapter/chapter3.html">Chapter 3</a></li>
+                <li><a href="chapter/chapter4.html">Chapter 4</a></li>
+                <li><a href="chapter/chapter5.html">Chapter 5</a></li>
+                <li><a href="chapter/chapter6.html">Chapter 6</a></li>
+                <li><a href="chapter/chapter7.html">Chapter 7</a></li>
+                <li><a href="chapter/chapter8.html">Chapter 8</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to Computer Science Notes</h2>
+            <p>This website contains detailed notes for NEB Grade 11 Computer Science, covering all topics in depth. Each chapter provides clear explanations, diagrams, and structured content to enhance learning.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 NEB Computer Science Notes</p>
+    </footer>
 </body>
 </html>
