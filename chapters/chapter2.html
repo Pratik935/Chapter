@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Logic Gates and Boolean Algebra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="chapter1.html">Previous Chapter</a>
+        <a href="../index.html">Home</a>
+        <a href="chapter3.html">Next Chapter</a>
+    </div>
+    
+    <div class="content">
+        <h1>Chapter 2: Logic Gates and Boolean Algebra</h1>
+        
+        <h2>Logic Gates</h2>
+        <p>Logic gates are the building blocks of digital circuits. They perform logical operations on binary inputs.</p>
+        
+        <h3>Types of Logic Gates</h3>
+        <ul>
+            <li><strong>AND Gate:</strong> Outputs HIGH (1) only if both inputs are HIGH.</li>
+            <li><strong>OR Gate:</strong> Outputs HIGH (1) if at least one input is HIGH.</li>
+            <li><strong>NOT Gate:</strong> Inverts the input (0 becomes 1, and 1 becomes 0).</li>
+            <li><strong>NAND Gate:</strong> Combination of AND followed by NOT (inverse of AND).</li>
+            <li><strong>NOR Gate:</strong> Combination of OR followed by NOT (inverse of OR).</li>
+            <li><strong>XOR Gate:</strong> Outputs HIGH if inputs are different.</li>
+            <li><strong>XNOR Gate:</strong> Outputs HIGH if inputs are the same.</li>
+        </ul>
+        
+        <h2>Boolean Algebra</h2>
+        <p>Boolean algebra is a mathematical approach used to analyze and simplify digital circuits.</p>
+        
+        <h3>Basic Boolean Laws</h3>
+        <ul>
+            <li><strong>Identity Law:</strong> A + 0 = A, A * 1 = A</li>
+            <li><strong>Null Law:</strong> A + 1 = 1, A * 0 = 0</li>
+            <li><strong>Idempotent Law:</strong> A + A = A, A * A = A</li>
+            <li><strong>Complement Law:</strong> A + A' = 1, A * A' = 0</li>
+            <li><strong>Distributive Law:</strong> A * (B + C) = A * B + A * C</li>
+            <li><strong>Absorption Law:</strong> A + (A * B) = A</li>
+        </ul>
+        
+        <h2>Truth Tables</h2>
+        <p>Truth tables help understand the behavior of logic gates by listing all possible input combinations and their corresponding outputs.</p>
+        
+        <h3>Example: AND Gate</h3>
+        <table border="1">
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>Output (A * B)</th>
+            </tr>
+            <tr><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>1</td><td>0</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>1</td><td>1</td><td>1</td></tr>
+        </table>
+    </div>
+</body>
+</html>
