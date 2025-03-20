@@ -3,88 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 2: Logic Gates and Boolean Algebra</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #575757;
-        }
-        .content {
-            padding: 20px;
-            text-align: left;
-            max-width: 800px;
-            margin: auto;
-        }
-    </style>
+    <title>Chapter 2 - Number System and Boolean Logic</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="chapter1.html">Previous Chapter</a>
-        <a href="../index.html">Home</a>
-        <a href="chapter3.html">Next Chapter</a>
-    </div>
-    
-    <div class="content">
-        <h1>Chapter 2: Logic Gates and Boolean Algebra</h1>
+    <header>
+        <h1>Chapter 2: Number System and Boolean Logic</h1>
+        <nav>
+            <ul>
+                <li><a href="chapter1.html">Previous Chapter</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="chapter3.html">Next Chapter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>2.1 Number System and Conversion</h2>
+            <p>The number system is a way of representing numbers in different formats. Common number systems include decimal, binary, octal, and hexadecimal. Understanding number systems is essential in computing as computers operate in binary.</p>
+        </section>
         
-        <h2>Logic Gates</h2>
-        <p>Logic gates are the building blocks of digital circuits. They perform logical operations on binary inputs.</p>
+        <section>
+            <h2>2.1.1 Decimal, Binary, Octal, and Hexadecimal Number System</h2>
+            <p><strong>Decimal (Base-10):</strong> The standard number system used by humans, consisting of digits 0-9.</p>
+            <p><strong>Binary (Base-2):</strong> The fundamental system used by computers, consisting of only 0 and 1.</p>
+            <p><strong>Octal (Base-8):</strong> Uses digits from 0 to 7 and is sometimes used in computing.</p>
+            <p><strong>Hexadecimal (Base-16):</strong> Uses digits 0-9 and letters A-F, commonly used in programming and memory addressing.</p>
+        </section>
         
-        <h3>Types of Logic Gates</h3>
-        <ul>
-            <li><strong>AND Gate:</strong> Outputs HIGH (1) only if both inputs are HIGH.</li>
-            <li><strong>OR Gate:</strong> Outputs HIGH (1) if at least one input is HIGH.</li>
-            <li><strong>NOT Gate:</strong> Inverts the input (0 becomes 1, and 1 becomes 0).</li>
-            <li><strong>NAND Gate:</strong> Combination of AND followed by NOT (inverse of AND).</li>
-            <li><strong>NOR Gate:</strong> Combination of OR followed by NOT (inverse of OR).</li>
-            <li><strong>XOR Gate:</strong> Outputs HIGH if inputs are different.</li>
-            <li><strong>XNOR Gate:</strong> Outputs HIGH if inputs are the same.</li>
-        </ul>
+        <section>
+            <h2>2.1.2 Number System Conversion</h2>
+            <p>Conversions between number systems are crucial in computing:</p>
+            <ul>
+                <li><strong>Decimal to Binary:</strong> Divide the number by 2 and record the remainders in reverse order.</li>
+                <li><strong>Binary to Decimal:</strong> Multiply each binary digit by powers of 2 and sum the results.</li>
+                <li><strong>Binary to Octal:</strong> Group binary digits in sets of three and convert.</li>
+                <li><strong>Binary to Hexadecimal:</strong> Group binary digits in sets of four and convert.</li>
+            </ul>
+        </section>
         
-        <h2>Boolean Algebra</h2>
-        <p>Boolean algebra is a mathematical approach used to analyze and simplify digital circuits.</p>
+        <section>
+            <h2>2.1.3 Binary Addition and Subtraction</h2>
+            <p>Binary arithmetic operations include:</p>
+            <ul>
+                <li><strong>Binary Addition:</strong> Follows similar rules as decimal addition but only uses 0 and 1.</li>
+                <li><strong>Binary Subtraction:</strong> Uses borrowing like decimal subtraction.</li>
+            </ul>
+        </section>
         
-        <h3>Basic Boolean Laws</h3>
-        <ul>
-            <li><strong>Identity Law:</strong> A + 0 = A, A * 1 = A</li>
-            <li><strong>Null Law:</strong> A + 1 = 1, A * 0 = 0</li>
-            <li><strong>Idempotent Law:</strong> A + A = A, A * A = A</li>
-            <li><strong>Complement Law:</strong> A + A' = 1, A * A' = 0</li>
-            <li><strong>Distributive Law:</strong> A * (B + C) = A * B + A * C</li>
-            <li><strong>Absorption Law:</strong> A + (A * B) = A</li>
-        </ul>
+        <section>
+            <h2>2.1.4 One’s and Two’s Complement Methods</h2>
+            <p>One’s complement is obtained by flipping all bits, while two’s complement is obtained by adding 1 to the one’s complement.</p>
+        </section>
         
-        <h2>Truth Tables</h2>
-        <p>Truth tables help understand the behavior of logic gates by listing all possible input combinations and their corresponding outputs.</p>
+        <section>
+            <h2>2.2 Logic Functions and Boolean Algebra</h2>
+            <p>Boolean algebra is used in digital circuits and computing. It includes variables that take values 0 or 1.</p>
+        </section>
         
-        <h3>Example: AND Gate</h3>
-        <table border="1">
-            <tr>
-                <th>A</th>
-                <th>B</th>
-                <th>Output (A * B)</th>
-            </tr>
-            <tr><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>0</td><td>1</td><td>0</td></tr>
-            <tr><td>1</td><td>0</td><td>0</td></tr>
-            <tr><td>1</td><td>1</td><td>1</td></tr>
-        </table>
-    </div>
+        <section>
+            <h2>2.2.1 Boolean Values, Truth Table, Boolean Expression</h2>
+            <p>Boolean expressions use AND, OR, and NOT operations. A truth table represents all possible inputs and outputs.</p>
+        </section>
+        
+        <section>
+            <h2>2.2.2 Logic Gates</h2>
+            <p>Logic gates perform Boolean operations:</p>
+            <ul>
+                <li><strong>AND:</strong> Outputs 1 if both inputs are 1.</li>
+                <li><strong>OR:</strong> Outputs 1 if at least one input is 1.</li>
+                <li><strong>NOT:</strong> Inverts the input.</li>
+                <li><strong>NAND, NOR, XOR, XNOR:</strong> Variants of the above gates with specific logic.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 NEB Computer Science Notes</p>
+    </footer>
 </body>
 </html>
