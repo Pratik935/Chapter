@@ -92,6 +92,30 @@
             <h3>5.2.16 Strings and String Functions</h3>
             <p>Strings store sequences of characters. Common string functions in C include strlen(), strcat(), strcmp(), strrev(), strcpy(), strlwr(), and strupr().</p>
         </section>
+        <section>
+            <h2>Some Example C Programs.</h2>
+            <h3>Program to input a number and check if it is prime or not.</h3>
+            <pre>
+                <code>
+                    #include &lt;stdio.h&gt;
+
+                    int main() {
+                        int num;
+                        printf("Enter a number: ");
+                        scanf("%d", &num);
+                        for(int i = 2; i < num; i++) {
+                            if (num % i == 0) {
+                                printf("Not a Prime Number.\n");
+                                goto end;
+                            }
+                        }
+                        printf("Prime Number.\n");
+                        end:
+                        return 0;
+                    }
+                </code>
+            </pre>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 NEB Computer Science Notes</p>
