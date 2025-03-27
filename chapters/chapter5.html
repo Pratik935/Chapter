@@ -92,6 +92,7 @@
             <h3>5.2.16 Strings and String Functions</h3>
             <p>Strings store sequences of characters. Common string functions in C include strlen(), strcat(), strcmp(), strrev(), strcpy(), strlwr(), and strupr().</p>
         </section>
+        <br>
         <section>
             <h2>Some Example C Programs.</h2>
             <h3>Program to input a number and check if it is prime or not.</h3>
@@ -112,6 +113,84 @@
                         printf("Prime Number.\n");
                         end:
                         return 0;
+                    }
+                </code>
+            </pre>
+            <h3>Program to input a number and find it's factorial.</h3>
+            <pre>
+                <code>
+                    #include &lt;stdio.h&gt;
+
+                    int main() {
+                    	int num, factorial = 1;
+                    	printf("Enter a number: ");
+                    	scanf("%d", &num);
+                    	for(int i = num; i > 0; i--) {
+                    		factorial *= i;
+                    	}
+                    	printf("The factorial of %d is %d.\n", num, factorial);
+                    	return 0;
+                    }
+                </code>
+            </pre>
+            <h3>Program to input a number and check if it is palindrome or not.</h3>
+            <pre>
+                <code>
+                    #include &lt;stdio.h&gt;
+
+                    int main() {
+                    	int num, temp, rev = 0;
+                    	printf("Enter a number: ");
+                    	scanf("%d", &num);
+                    	temp = num;
+                    	while(temp != 0) {
+                    		rev = rev * 10 + temp % 10;
+                    		temp = temp / 10;
+                    	}
+                    	if (rev == num) {printf("Palindrome.\n"); }
+                    	else { printf("Not a palindrome.\n"); }
+                    	return 0;
+                    }	
+                </code>
+            </pre>
+            <h3>Program to generate fibonacci series upto n terms.</h3>
+            <pre>
+                <code>
+                    #include &lt;stdio.h&gt;
+
+                    int main() {
+                    	int a = 0, b = 1, c = 0, num;
+                    	printf("Enter a number: ");
+                    	scanf("%d", &num);
+                    	if (num == 1 ) { printf("0\n"); }
+                    	else if (num == 2 ) { printf(" 0 1\n"); }
+                    	else {
+                    		printf("%d %d ", a, b);
+                    		for (int i = 3; i <= num; i++ ) {
+                    			c = a + b;
+                    			printf("%d ", c);
+                    			a = b, b = c;
+                    		}
+                    	}
+                    	return 0;
+                    }
+                </code>
+            </pre>
+            <h3>Program to input a number and check it is perfect number or not.</h3>
+            <pre>
+                <code>
+                    #include &lt;stdio.h&gt;
+
+                    int main() {
+                    	int num, sum = 0;
+                    	printf("Enter a number: ");
+                    	scanf("%d", &num);
+                    	for(int i = 1; i < num; i++ ) {
+                    		if(num % i == 0) { sum += i; }
+                    	}
+                    	if(sum == num) { printf("Perfect Number.\n"); }
+                    	else { printf("Not a perfect Number.\n"); }
+                    	return 0;
                     }
                 </code>
             </pre>
