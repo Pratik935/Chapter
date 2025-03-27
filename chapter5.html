@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Programming Concepts & Logics</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chapter 5: Programming Concepts & Logics</h1>
+        <nav>
+            <ul>
+                <li><a href="chapter4.html">Previous Chapter</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="chapter6.html">Next Chapter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>5.1 Programming Concept</h2>
+            <h3>5.1.1 Introduction to Programming Languages</h3>
+            <p>Programming languages are formal languages used to communicate instructions to a computer. They are essential for creating software, applications, and websites.</p>
+            
+            <h3>5.1.2 Low Level, High Level, 4GL Programming Languages</h3>
+            <p>Low-level languages like Assembly interact closely with hardware, whereas high-level languages like Python, Java, and C++ provide abstraction for easier programming. Fourth-generation languages (4GL) such as SQL are designed for specific tasks like database management.</p>
+            
+            <h3>5.1.3 Compiler, Interpreter, and Assembler</h3>
+            <p>Compilers translate an entire program into machine code before execution, while interpreters translate and execute code line-by-line. Assemblers convert assembly language into machine code.</p>
+            
+            <h3>5.1.4 Syntax, Semantic, and Runtime Errors</h3>
+            <p>Syntax errors occur due to incorrect code structure, semantic errors involve logic mistakes, and runtime errors occur during execution due to invalid operations.</p>
+            
+            <h3>5.1.5 Control Structures: Sequence, Selection, and Iteration</h3>
+            <p>Control structures dictate the flow of a program. Sequence executes instructions linearly, selection (if-else, switch) makes decisions, and iteration (loops) repeats processes.</p>
+            
+            <h3>5.1.6 Program Design Tools – Algorithm, Flowchart, and Pseudocode</h3>
+            <p>Algorithms define step-by-step logic for problem-solving. Flowcharts visually represent algorithms using symbols, while pseudocode expresses logic in human-readable format.</p>
+            
+            <h3>5.1.7 Absolute Binary, BCD, ASCII, and Unicode</h3>
+            <p>These encoding schemes represent data in binary form for storage and communication. ASCII and Unicode handle text characters, while BCD represents decimal numbers in binary.</p>
+        </section>
+        
+        <section>
+            <h2>5.2 C Programming Language</h2>
+            <h3>5.2.1 Introduction and Features of C Language</h3>
+            <p>C is a powerful, structured programming language used for system and application development. It is known for efficiency, portability, and flexibility.</p>
+            
+            <h3>5.2.2 Structure of a C Program</h3>
+            <p>A C program consists of a header, main function, and statements. Each program follows a structured format for readability and execution.</p>
+            
+            <h3>5.2.3 C Preprocessor and Header Files</h3>
+            <p>The C preprocessor processes source code before compilation, and header files contain reusable function definitions and macros.</p>
+            
+            <h3>5.2.4 Character Set Used in C</h3>
+            <p>C recognizes letters, digits, special characters, and whitespace as part of its character set for defining variables, functions, and operations.</p>
+            
+            <h3>5.2.5 Use of Comments</h3>
+            <p>Comments in C improve code readability and documentation. They can be single-line (//) or multi-line (/* */).</p>
+            
+            <h3>5.2.6 Identifiers, Keywords, and Tokens</h3>
+            <p>Identifiers are user-defined names for variables, functions, and arrays. Keywords are reserved words like int, return, and while.</p>
+            
+            <h3>5.2.7 Basic Data Types in C</h3>
+            <p>C has fundamental data types such as int, float, char, and double, which define variable types and memory requirements.</p>
+            
+            <h3>5.2.8 Constants and Variables</h3>
+            <p>Constants hold fixed values, while variables store data that can change during program execution.</p>
+            
+            <h3>5.2.9 Type Specifiers</h3>
+            <p>Type specifiers such as signed, unsigned, short, and long modify data type properties.</p>
+            
+            <h3>5.2.10 Simple and Compound Statements</h3>
+            <p>Simple statements execute a single operation, whereas compound statements group multiple instructions using curly braces {}.</p>
+            
+            <h3>5.2.11 Operators and Expressions</h3>
+            <p>C includes arithmetic (+, -), relational (==, !=), logical (&&, ||), assignment (=), unary, and conditional operators.</p>
+            
+            <h3>5.2.12 Input/Output (I/O) Functions</h3>
+            <p>Common I/O functions in C are printf() for output and scanf() for input.</p>
+            
+            <h3>5.2.13 Selection Control Statements</h3>
+            <p>Selection statements include if, if-else, nested if, and switch-case constructs.</p>
+            
+            <h3>5.2.14 Iteration Control Statements</h3>
+            <p>Looping structures in C include while, do-while, and for loops.</p>
+            
+            <h3>5.2.15 Arrays</h3>
+            <p>Arrays store multiple values of the same data type. One-dimensional and two-dimensional arrays are commonly used.</p>
+            
+            <h3>5.2.16 Strings and String Functions</h3>
+            <p>Strings store sequences of characters. Common string functions in C include strlen(), strcat(), strcmp(), strrev(), strcpy(), strlwr(), and strupr().</p>
+        </section>
+        <br>
+        <section>
+            <h2>Some Example C Programs.</h2>
+            <section class="code">
+            <h3>Program to input a number and check if it is prime or not.</h3>
+                <iframe src="../code/prime.c" style="width: 100%; height: 270px;" frameborder="0"></iframe>
+                <p>Output:<br><img src="../images/prime.png" alt="prime.png"></p>
+            </section>
+            <h3>Program to input a number and find it's factorial.</h3>
+            <iframe src="../code/factorial.c" style="width: 100%; height: 210px" frameborder="0"></iframe>
+            <h3>Program to input a number and check if it is palindrome or not.</h3>
+            <pre>
+                <code>
+                    #include &lt;stdio.h&gt;
+
+                    int main() {
+                    	int num, temp, rev = 0;
+                    	printf("Enter a number: ");
+                    	scanf("%d", &num);
+                    	temp = num;
+                    	while(temp != 0) {
+                    		rev = rev * 10 + temp % 10;
+                    		temp = temp / 10;
+                    	}
+                    	if (rev == num) {printf("Palindrome.\n"); }
+                    	else { printf("Not a palindrome.\n"); }
+                    	return 0;
+                    }	
+                </code>
+            </pre>
+            <iframe src="../images/palindrome.png" style="width: 288px; height: 58px;"></iframe>
+            <h3>Program to generate fibonacci series upto n terms.</h3>
+            <iframe src="../code/fibonacci.c" style="width: 100%; height: 58px;" frameborder="0"></iframe>
+            <h3>Program to input a number and check it is perfect number or not.</h3>
+            <pre>
+                <code>
+                    #include &lt;stdio.h&gt;
+
+                    int main() {
+                    	int num, sum = 0;
+                    	printf("Enter a number: ");
+                    	scanf("%d", &num);
+                    	for(int i = 1; i < num; i++ ) {
+                    		if(num % i == 0) { sum += i; }
+                    	}
+                    	if(sum == num) { printf("Perfect Number.\n"); }
+                    	else { printf("Not a perfect Number.\n"); }
+                    	return 0;
+                    }
+                </code>
+            </pre>
+            <iframe src="../images/perfect.png" style="width: 263px; height: 61px;"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 NEB Computer Science Notes</p>
+    </footer>
+</body>
+</html>
