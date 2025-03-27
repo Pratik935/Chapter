@@ -96,27 +96,29 @@
         <section>
             <h2>Some Example C Programs.</h2>
             <h3>Program to input a number and check if it is prime or not.</h3>
-            <pre>
-                <code>
-                    #include &lt;stdio.h&gt;
-
-                    int main() {
-                        int num;
-                        printf("Enter a number: ");
-                        scanf("%d", &num);
-                        for(int i = 2; i < num; i++) {
-                            if (num % i == 0) {
-                                printf("Not a Prime Number.\n");
-                                goto end;
+            <p>
+                <pre>
+                    <code>
+                        #include &lt;stdio.h&gt;
+    
+                        int main() {
+                            int num;
+                            printf("Enter a number: ");
+                            scanf("%d", &num);
+                            for(int i = 2; i < num; i++) {
+                                if (num % i == 0) {
+                                    printf("Not a Prime Number.\n");
+                                    goto end;
+                                }
                             }
+                            printf("Prime Number.\n");
+                            end:
+                            return 0;
                         }
-                        printf("Prime Number.\n");
-                        end:
-                        return 0;
-                    }
-                </code>
-            </pre>
-            <iframe src="../images/prime.png" style="width: 241px; height: 61px;"></iframe>
+                    </code>
+                </pre>
+                <iframe src="../images/prime.png" style="width: 241px; height: 61px;"></iframe>
+            </p>
             <h3>Program to input a number and find it's factorial.</h3>
             <pre>
                 <code>
